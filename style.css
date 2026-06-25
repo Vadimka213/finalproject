@@ -1,0 +1,91 @@
+:root{
+    --main-color:#FFF;
+    --title-color: #2D2F2F;
+  --active-color: #8D4A00;
+  --text-color:#5A5C5C;
+  --hero-bg: radial-gradient(85.61% 61.6% at 50% 50%, rgba(253, 211, 77, 0.15) 0%, rgba(253, 211, 77, 0.00) 70%);
+  --active-accent: 2px solid #FE973C;
+
+}
+body{
+    font-family: "Space Grotesk", sans-serif;
+    list-style: none;
+}
+.container{
+    width: 1212px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+.logo{
+color: var(--title-color);
+font-size: 24px;
+font-weight: 900;
+line-height: 1.33;
+letter-spacing: -1.2px;
+text-transform: uppercase;
+}
+.header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.header-item{
+color: var(--text-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42;
+letter-spacing: -0.35px;
+text-transform: uppercase;
+
+}
+.header-link{
+color: var(--text-color);
+font-family: "Space Grotesk";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.42;
+letter-spacing: -0.35px;
+text-transform: uppercase;
+
+}
+.header-link:hover,
+.header-link:focus
+{
+color: var(--active-color);
+
+}
+.header-link::after{
+    content: "";
+display: block;
+width: 100%;
+height: 2px;
+background-color:  #FE973C;
+opacity: 0;
+}
+.header-btn{
+padding: 12px 32px;
+border-radius: 9999px;
+background: var(--active-color);
+color: #FFF0E7;
+text-align: center;
+font-family: "Space Grotesk";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.33;
+letter-spacing: 1.2px;
+text-transform: uppercase;
+
+}
