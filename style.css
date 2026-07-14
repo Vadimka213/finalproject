@@ -757,3 +757,22 @@ letter-spacing: 2px;
 text-transform: uppercase;
 
 }
+
+.item {
+    overflow: hidden;
+    border-radius: 16px;
+    transition: transform .4s ease;
+}
+
+.item img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item:hover img {
+    transform: scale(1.08);
+}
